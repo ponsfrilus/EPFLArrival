@@ -5,7 +5,7 @@
       <div class="searchForm">
         <h2>Search</h2>
         <div class="searchBlock">
-<input v-model="searchString" type="text" class="searchInput" />
+          <input v-model="searchString" type="text" class="searchInput" />
           <div class="squareCheck">
             <label>
               <div class="check check-identity">
@@ -52,7 +52,7 @@
       <br />
       <div class="landing" >
         <div class="tiles-flex" >
-          <sub-hello v-for="info in filteredInfos" :info="info"></sub-hello>
+          <card-item v-for="info in filteredInfos" :info="info"></card-item>
         </div>
       </div>
       <a name="footer" />
@@ -63,10 +63,10 @@
 </template>
 
 <script>
-import SubHello from './SubHello'
+import CardItem from './CardItem'
 
 export default {
-  name: 'hello',
+  name: 'CardsHolder',
   props: ['infos'],
   data () {
     return {
@@ -75,7 +75,7 @@ export default {
     }
   },
   components: {
-    SubHello
+    CardItem
   },
   computed: {
     filteredInfos () {

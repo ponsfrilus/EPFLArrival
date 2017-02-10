@@ -1,16 +1,16 @@
 <template>
-<div id='app'>
-  <hello :infos='infos'></hello>
-</div>
+  <div id='app'>
+    <cards-holder :infos='infos'></cards-holder>
+  </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import CardsHolder from './components/CardsHolder'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    CardsHolder
   },
   data () {
     /**

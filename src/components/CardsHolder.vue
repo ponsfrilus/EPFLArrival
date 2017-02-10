@@ -55,7 +55,8 @@ export default {
       }, [])
     },
     filteredInfos () {
-      console.log('this.filter is now ' + this.searchBox)
+      // return this.infos
+      // console.log('this.filter is now ' + this.searchBox)
       // first filter on main category
       let checkFiltered = this.infos
       if (this.searchBox !== '' && this.searchBox !== 'all') {
@@ -67,7 +68,6 @@ export default {
           })
         })
       }
-      console.log(checkFiltered)
       return checkFiltered.filter((info) => {
         return info.tags.find((tag) => {
           if (tag.includes(this.searchString)) {
@@ -75,13 +75,6 @@ export default {
           }
         })
       })
-      /* return this.infos.filter((info) => {
-        return info.tags.find((tag) => {
-          if (tag.includes(this.searchString)) {
-            return true
-          }
-        })
-      }) */
     }
   }
 }

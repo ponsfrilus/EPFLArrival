@@ -2,6 +2,11 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+import AsyncComputed from 'vue-async-computed'
+
+/* Initialize the plugin */
+Vue.use(AsyncComputed);
+
 
 /* eslint-disable no-new */
 new Vue({

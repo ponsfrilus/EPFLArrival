@@ -7,14 +7,19 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
+    "jsonserver": "node ./node_modules/json-server/bin/index.js --watch Data/tiles.json",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
+    "jquery": "^3.1.1",
+    "json-server": "^0.9.4",
     "underscore": "^1.8.3",
-    "vue": "^2.1.0"
+    "vue": "^2.1.0",
+    "vue-async-computed": "^3.0.0",
+    "vue-resource": "^1.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",

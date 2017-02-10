@@ -250,8 +250,9 @@ export default {
 }
 
 .check {
-  width: 100%;
-  display: block;
+  width: 150px;
+  padding: 0.5rem;
+  margin: 0.2rem;
 }
 
 .check-all { /* pink for all */

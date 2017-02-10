@@ -23,7 +23,7 @@ export default {
     axios.get('https://rawgit.com/ponsfrilus/EPFLArrival/czufferey%2Bdomq/json/Data/tiles.json')
     .then((response) => {
       console.log(response.data)
-      this.tiles = response.data
+      this.tiles = response.data.infos
     })
   }
 }

@@ -1,16 +1,8 @@
 <template>
   <div class="home">
     <h1>EPFL Arrival Map</h1>
-    <p>{{types}}</p>
     <p>Arrival is a website<sup><a href="#footer">1</a></sup> to allow new comers in EPFL to<br />easily find relevant service and information.</p>
-      <div class="searchForm">
-        <h2>Search</h2>
-        <div class="searchBlock">
-          <input v-model="searchString" type="text" class="searchInput" />
-          <card-category-filter :type="type" v-for="type in types" />
-        </div>
-      </div>
-      <br />
+      <card-filter :types="types" @filter="filter"></card-filter>
       <br />
       <br />
       <div class="landing" >
@@ -27,7 +19,7 @@
 
 <script>
 import CardItem from './CardItem'
-import CardCategoryFilter from './CardCategoryFilter'
+import CardFilter from './CardFilter'
 
 export default {
   name: 'CardsHolder',
@@ -40,7 +32,13 @@ export default {
   },
   components: {
     CardItem,
-    CardCategoryFilter
+    CardFilter
+  },
+  methods: {
+    filter (filterProps) {
+      this.searchString = filterProps.searchString
+      this.searchBox = filterProps.searchCategory
+    }
   },
   computed: {
     types () {

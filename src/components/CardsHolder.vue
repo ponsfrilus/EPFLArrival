@@ -8,7 +8,6 @@
         <div class="searchBlock">
           <input v-model="searchString" type="text" class="searchInput" />
           <card-category-filter :type="type" v-for="type in types" />
-
         </div>
       </div>
       <br />
@@ -16,7 +15,7 @@
       <br />
       <div class="landing" >
         <div class="tiles-flex" >
-          <card-item v-for="info in filteredInfos" :info="info"></card-item>
+          <card-item @selectedCat="selectedCategory(info)"  v-for="info in filteredInfos" :info="info"></card-item>
         </div>
       </div>
       <a name="footer" />
@@ -40,7 +39,8 @@ export default {
     }
   },
   components: {
-    CardItem, CardCategoryFilter
+    CardItem,
+    CardCategoryFilter
   },
   computed: {
     types () {
@@ -52,7 +52,7 @@ export default {
           }
         })
         return prev
-      }, [])
+      }, ['all'])
     },
     filteredInfos () {
       // return this.infos
@@ -75,6 +75,10 @@ export default {
           }
         })
       })
+    },
+    selectedCategory (info) {
+      console.log(info)
+      this.searchBox = info
     }
   }
 }

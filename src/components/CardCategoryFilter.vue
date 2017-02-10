@@ -2,7 +2,7 @@
   <div>
     <label>
       <div :class="typeStyle">
-        <input type="radio" name="search" :value="type" v-model="searchBox"> {{capitilize(type)}}
+        <input type="radio" name="search" :value="type" @v-model="selected"> {{capitilize(type)}}
       </div>
     </label>
   </div>
@@ -10,6 +10,17 @@
 
 <script>
 export default {
+  data () {
+    return {
+      selected: false
+    }
+  },
+  watch: {
+    selected () {
+      console.log('selected' + this.type)
+      this.$emit('selectedCat')
+    }
+  },
   props: ['type'],
   methods: {
     capitilize (text) {

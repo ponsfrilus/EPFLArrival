@@ -1,49 +1,13 @@
 <template>
   <div class="home">
     <h1>EPFL Arrival Map</h1>
+    <p>{{types}}</p>
     <p>Arrival is a website<sup><a href="#footer">1</a></sup> to allow new comers in EPFL to<br />easily find relevant service and information.</p>
       <div class="searchForm">
         <h2>Search</h2>
         <div class="searchBlock">
           <input v-model="searchString" type="text" class="searchInput" />
-          <div class="squareCheck">
-            <label>
-              <div class="check check-identity">
-                <input type="radio" name="search" value="identity" v-model="searchBox"> Identity
-              </div>
-            </label>
-            <label>
-              <div class="check check-others">
-                <input type="radio" name="search" value="others" v-model="searchBox"> Others
-              </div>
-            </label>
-          </div>
-
-          <div class="squareCheck">
-            <label>
-              <div class="check check-backup">
-                <input type="radio" name="search" value="backup" v-model="searchBox"> Backup / Sharing
-              </div>
-            </label>
-            <label>
-              <div class="check check-communication">
-                <input type="radio" name="search" value="communication" v-model="searchBox"> Communication
-              </div>
-            </label>
-          </div>
-
-          <div class="squareCheck">
-            <label>
-              <div class="check check-all">
-                <input type="radio" name="search" value="all" v-model="searchBox"> All
-              </div>
-            </label>
-            <label>
-              <div class="check check-service">
-                <input type="radio" name="search" value="service" v-model="searchBox"> Service / Tools
-              </div>
-            </label>
-          </div>
+          <card-category-filter :type="type" v-for="type in types" />
 
         </div>
       </div>
@@ -64,6 +28,7 @@
 
 <script>
 import CardItem from './CardItem'
+import CardCategoryFilter from './CardCategoryFilter'
 
 export default {
   name: 'CardsHolder',
@@ -75,9 +40,20 @@ export default {
     }
   },
   components: {
-    CardItem
+    CardItem, CardCategoryFilter
   },
   computed: {
+    types () {
+      return this.infos.reduce((prev, curr) => {
+        let cats = curr.maincat
+        cats.map((cat) => {
+          if (prev.indexOf(cat) === -1) {
+            prev.push(cat)
+          }
+        })
+        return prev
+      }, [])
+    },
     filteredInfos () {
       console.log('this.filter is now ' + this.searchBox)
       // first filter on main category

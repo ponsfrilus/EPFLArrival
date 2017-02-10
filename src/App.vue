@@ -1,37 +1,30 @@
 <template>
 <div id='app'>
-  <hello :infos='infos'></hello>
+  <hello :infos='tiles'></hello>
 </div>
 </template>
 
 <script>
 import Hello from './components/Hello'
-
+import axios from 'axios'
 
 export default {
   name: 'app',
   components: {
     Hello
   },
-  asyncComputed: {
-    data () {
-      return this.$http.get('http://localhost:3000/db')
-          .then(function(response) {
-            debugger;
-            return response
-          });
-
-      /**
-      These data define the tiles ;
-      The desc_fr is not yet used.
-      Tags array define the search keyworkds.
-      Maincat define the serch checkbox and the first element defines the tile's color
-      **/
-
-      // No exclusivity, random order at display
-      tiles.infos.sort(function (a, b) { return Math.random() - 0.5 })
-      return tiles
+  data () {
+    return {
+      tiles: []
     }
+  },
+  created () {
+    // Note ->> change for production (check branch + rawgit)
+    axios.get('https://rawgit.com/ponsfrilus/EPFLArrival/czufferey%2Bdomq/json/Data/tiles.json')
+    .then((response) => {
+      console.log(response.data)
+      this.tiles = response.data
+    })
   }
 }
 </script>

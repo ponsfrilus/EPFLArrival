@@ -91,7 +91,6 @@ export default {
           })
         })
       }
-      console.log(checkFiltered)
       return checkFiltered.filter((info) => {
         return info.tags.find((tag) => {
           if (tag.includes(this.searchString)) {

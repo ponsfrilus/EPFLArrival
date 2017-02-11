@@ -11,12 +11,15 @@
 </template>
 <script>
   export default {
-    props: ['types'],
+    props: ['types', 'initType'],
     data () {
       return {
         searchString: '',
         searchCategory: ''
       }
+    },
+    created () {
+      this.searchCategory = this.initType
     },
     watch: {
       searchString () {

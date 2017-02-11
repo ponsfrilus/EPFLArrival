@@ -2,7 +2,7 @@
   <div class="home">
     <h1>EPFL Arrival Map</h1>
     <p>Arrival is a website<sup><a href="#footer">1</a></sup> to allow new comers in EPFL to<br />easily find relevant service and information.</p>
-      <card-filter :types="types" @filter="filter"></card-filter>
+      <card-filter :initType="searchBox" :types="types" @filter="filter"></card-filter>
       <div class="landing" >
         <div class="tiles-flex" >
           <card-item @selectedCat="selectedCategory(info)"  v-for="info in filteredInfos" :info="info"></card-item>

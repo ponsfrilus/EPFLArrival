@@ -1,17 +1,11 @@
 <template>
   <div class="home">
-    <h1>EPFL Arrival Map</h1>
-    <p>Arrival is a website<sup><a href="#footer">1</a></sup> to allow new comers in EPFL to<br />easily find relevant service and information.</p>
       <card-filter :initType="searchBox" :types="types" @filter="filter"></card-filter>
       <div class="landing" >
-        <div class="tiles-flex" >
-          <card-item @selectedCat="selectedCategory(info)"  v-for="info in filteredInfos" :info="info"></card-item>
-        </div>
+        <transition-group name="list" tag="div" class="tiles-flex">
+          <card-item @selectedCat="selectedCategory(info)"  v-for="info in filteredInfos" :info="info" :key="info"></card-item>
+        </transition-group>
       </div>
-      <a name="footer" />
-      <footer>
-        &mdash; <small>Proudly using <a href="https://vuejs.org/v2/">vue.js</a> and made with <a href="https://en.wikipedia.org/wiki/Open-source_software">oss</a> by <a href="https://go.epfl.ch/nbo">nbo</a> | Submit new tiles with <acronym title="Pull Request" lang="en">PR</acronym> on <a href="https://gitlab.epfl.ch/###">gitlab</a></small> &mdash;
-      </footer>
   </div>
 </template>
 
@@ -79,3 +73,44 @@ export default {
   }
 }
 </script>
+<style lang="css">
+  .list-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .list-enter-active, .list-leave-active {
+    transition: all 1s;
+  }
+  .list-enter, .list-leave-to /* .list-leave-active for <2.1.8 */ {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  .bounce-enter-active {
+  animation: bounce-in .5s;
+}
+.bounce-leave-active {
+  animation: bounce-out .5s;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes bounce-out {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+</style>

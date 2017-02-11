@@ -1,17 +1,21 @@
 <template>
   <div id='app'>
+    <header-component></header-component>
     <cards-holder :infos='infos'></cards-holder>
+    <footer-component></footer-component>
   </div>
 </template>
 
 <script>
+import HeaderComponent from './layout/Header.vue'
+import FooterComponent from './layout/Footer.vue'
 import CardsHolder from './components/CardsHolder'
 import axios from 'axios'
 
 export default {
   name: 'app',
   components: {
-    CardsHolder
+    CardsHolder, HeaderComponent, FooterComponent
   },
   data () {
     return {

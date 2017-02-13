@@ -1,6 +1,8 @@
 # arrival
 
-> A Vue.js project
+A Vue.js project
+
+Available here: https://ponsfrilus.github.io/EPFLArrival/
 
 ## Build Setup
 

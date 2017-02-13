@@ -1,102 +1,30 @@
 <template>
-<div id='app'>
-  <hello :infos='infos'></hello>
-</div>
+  <div id='app'>
+    <cards-holder :infos='infos'></cards-holder>
+  </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import CardsHolder from './components/CardsHolder'
+import axios from 'axios'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    CardsHolder
   },
   data () {
-    /**
-    These data define the tiles ;
-    The desc_fr is not yet used.
-    Tags array define the search keyworkds.
-    Maincat define the serch checkbox and the first element defines the tile's color
-    **/
-    let tiles = {
-      infos: [{
-        'id': '1',
-        'title': 'EPFL',
-        'desc_fr': 'Site officiel de l\'EPFL',
-        'desc_en': 'Official EPFL website',
-        'link': 'http://www.epfl.ch',
-        'tags': ['epfl', 'website'],
-        'maincat': ['others']
-      },
-      {
-        'id': '2',
-        'title': 'GO',
-        'desc_fr': 'Service de raccourcissement d\'URLs',
-        'desc_en': 'URLs shortener service',
-        'link': 'http://go.epfl.ch',
-        'tags': ['service', 'url', 'website', 'go'],
-        'maincat': ['service', 'communication']
-      },
-      {
-        'id': '3',
-        'title': 'IT',
-        'desc_en': 'Main IT website',
-        'desc_fr': 'Site IT principal',
-        'link': 'http://it.epfl.ch',
-        'tags': ['IT', 'website'],
-        'maincat': ['service', 'communication']
-      },
-      {
-        'id': '4',
-        'title': 'EPNET',
-        'desc_en': 'EPNET - EPFL Network',
-        'desc_fr': 'EPNET - EPFL Network',
-        'link': 'http://epnet.epfl.ch',
-        'tags': ['service', 'network', 'réseau', 'epnet'],
-        'maincat': ['service']
-      },
-      {
-        'id': '5',
-        'title': 'Repro',
-        'desc_en': 'Print center',
-        'desc_fr': 'Centre d\'impression',
-        'link': 'http://repro.epfl.ch/',
-        'tags': ['service', 'print', 'impression'],
-        'maincat': ['service']
-      },
-      {
-        'id': '6',
-        'title': 'Camipro',
-        'desc_en': 'Your multifunction campus card',
-        'desc_fr': 'Votre carte multifonction sur le campus',
-        'link': 'http://camipro.epfl.ch/',
-        'tags': ['identity', 'card', 'camipro'],
-        'maincat': ['identity']
-      },
-      {
-        'id': '7',
-        'title': 'EPFL Web Mail',
-        'desc_en': 'Your multifunction campus card',
-        'desc_fr': 'Votre carte multifonction sur le campus',
-        'link': 'http://ewa.epfl.ch/',
-        'tags': ['mail', 'ewa', 'email', 'webmail'],
-        'maincat': ['communication']
-      },
-      {
-        'id': '8',
-        'title': 'NAS',
-        'desc_en': 'File storage services',
-        'desc_fr': 'Stockage des fichiers',
-        'link': 'http://nas.epfl.ch/index.php',
-        'tags': ['storage', 'backup', 'camipro'],
-        'maincat': ['backup']
-      }
-      ]
+    return {
+      tiles: []
     }
-    // No exclusivity, random order at display
-    tiles.infos.sort(function (a, b) { return Math.random() - 0.5 })
-    return tiles
+  },
+  created () {
+    // Note ->> change for production (check branch + rawgit)
+    axios.get('https://rawgit.com/ponsfrilus/EPFLArrival/czufferey%2Bdomq/json/Data/tiles.json')
+    .then((response) => {
+      console.log(response.data)
+      this.tiles = response.data.infos
+    })
   }
 }
 </script>

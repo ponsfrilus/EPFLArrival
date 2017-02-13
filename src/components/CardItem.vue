@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: 'subhello',
+  name: 'carditem',
   props: ['info'],
   computed: {
     computedClass: function () {

@@ -4,7 +4,7 @@
       <h2 class="tile-title">{{ info.title }}</h2>
       <div class="tile-divider"></div>
       <p class="tile-description">{{ info.desc_en }}
-        <br><a :href="info.link">{{ info.link }}</a>
+        <br /><a :href="info.link">{{ info.link }}</a>
       </p>
     </a>
   </div>

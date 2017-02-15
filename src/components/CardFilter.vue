@@ -1,7 +1,6 @@
 <template>
   <div>
-    <label>Filter: </label>
-    <input v-model="searchString" type="text" class="searchInput" />
+    <input v-model="searchString" type="text" class="searchInput" autofocus />
     <div class="searchCategories">
       <div :class="typeStyle(typeFilter)" v-for="typeFilter in types" @click="select(typeFilter)">
        <input type="radio" :value="typeFilter" v-model="searchCategory" @click="select(typeFilter)">{{capitilize(typeFilter)}}</input>

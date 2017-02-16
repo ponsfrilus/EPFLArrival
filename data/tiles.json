@@ -233,7 +233,11 @@
       "desc_fr":"Note de frais",
       "link":"https://infowww.epfl.ch",
       "tags":[
-        "infowww"
+        "infowww",
+        "note de frais",
+        "expense report",
+        "remboursement",
+        "refund" 
       ],
       "maincat":[
         "service"

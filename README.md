@@ -12,6 +12,8 @@ For now, the site is available online on https://ponsfrilus.github.io/EPFLArriva
 ## How to add new tiles
 You may want to have a look to the [CONTRIBUTING](https://github.com/ponsfrilus/EPFLArrival/blob/master/CONTRIBUTING) guide.
 
+:bulb: **Heads up:** In order to serve your local copy of `tiles.json` you will have to use `npm run local`, while `npm run dev` will serve remote JSON data from  [github](https://github.com/ponsfrilus/EPFLArrival/blob/master/data/tiles.json).
+
 ### The smart way
 It should be pretty straight-forward if you are familiar with github:
   1. [Fork](https://github.com/ponsfrilus/EPFLArrival/fork) the repository,
@@ -35,6 +37,9 @@ npm install
 
 # serve with hot reload at localhost:8080
 npm run dev
+
+# serve (with local tiles.json) with hot reload at localhost:8080
+npm run local
 
 # build for production with minification
 npm run build

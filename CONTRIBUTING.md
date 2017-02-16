@@ -18,7 +18,7 @@ Note: this is a `WIP` document !
 * Create a topic branch from the `master` one.
   * To quickly create a topic branch based on master:  
    `git checkout -b fix/my_contribution master`  
-   Please avoid working directly on the     `master` branch.
+   Please avoid working directly on the `master` branch.
 * Make commits of logical units.
 * Make sure your commit messages are eloquent.
 * Make sure you have added the necessary tests for your changes.
@@ -27,8 +27,10 @@ Note: this is a `WIP` document !
 * Submit a pull request to the [EPFLArrival](https://github.com/ponsfrilus/EPFLArrival) repository.
 * If you think you are waiting too long, please [message](https://t.me/ponsfrilus) me.
 
-## Tiles information / recommandation
+## Tiles information / recommendation
 A tile is a bunch of JSON data in the `./data/tiles.json` file.
+
+:bulb: **Heads up:** In order to serve your local copy of `tiles.json` you will have to use `npm run local`, while `npm run dev` will serve remote JSON data from  [github](https://github.com/ponsfrilus/EPFLArrival/blob/master/data/tiles.json).
 
 For example, the "GO" tile contains:
 ```

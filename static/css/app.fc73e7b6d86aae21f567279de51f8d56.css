@@ -1,0 +1,293 @@
+
+#app {
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+#hello {
+  -ms-flex: 1;
+      flex: 1;
+}
+#form {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  /* margin-top: 60px; */
+}
+.landing {
+  width: 100%;
+  max-width: 800px;
+  /* Force to a maximum of 3 tiles wide */
+  margin: 0 auto;
+  text-align: center;
+}
+.landing .landing-title {
+  text-align: center;
+  font-size: 2em;
+ /*  margin: .67em 0 */
+}
+.landing .landing-search {
+  overflow: hidden;
+  padding: 20px;
+}
+.landing .landing-search input[type="text"] {
+  width: 640px;
+  border-style: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  box-shadow: .5px 2px 4px 0 #bdbdbd;
+}
+@media screen and (max-width: 728px) {
+.landing .landing-search input[type="text"] {
+    width: 420px;
+}
+}
+@media screen and (max-width: 508px) {
+.landing .landing-search {
+    display: none;
+}
+}
+.tiles-flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  max-width: 800px;
+  /* purely to stop the max width of tiles at 3 */
+}
+.tile {
+  /* looks */
+  border-top: 8px solid #343537;
+  background-color: #fff;
+  box-shadow: .5px 2px 4px 0 #bdbdbd;
+  /* sizing/boxing */
+  width: 200px;
+  height: 220px;
+  margin: 10px;
+  padding: 10px;
+  /* animation */
+  transition: 250ms;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+  /* layout */
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+.tile-all { /* pink for all */
+  border-top: 8px solid #fcf;
+}
+.tile-identity { /* red for identity */
+  border-top: 8px solid #fcc;
+}
+.tile-communication { /* green for communication / UC */
+  border-top: 8px solid #cfc;
+}
+.tile-others { /* yellow for others */
+  border-top: 8px solid #ffc;
+}
+.tile-service { /* purple for service */
+  border-top: 8px solid #ccf;
+}
+.tile-backup { /* blue for backup */
+  border-top: 8px solid #cff;
+}
+.tile:hover {
+  transform: translate3d(0, -6px, 0)
+}
+.tile .tile-title {
+  /* looks */
+  font-size: 20px;
+  letter-spacing: .4px;
+  color: #676363;
+  /* sizing/boxing */
+  height: 89px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px 20px;
+  /* layout */
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.tile .tile-divider {
+  height: 2px;
+  width: 100%;
+  margin: 0 5px;
+  border: .5px solid #343537;
+  background-color: #343537;
+  -ms-flex-item-align: auto;
+  -ms-grid-row-align: auto;
+      align-self: auto;
+}
+.tile .tile-description {
+  /* looks */
+  font-size: 14px;
+  letter-spacing: .2px;
+  line-height: 1.25;
+  color: #757575;
+  /* sizing/boxing */
+  height: 89px;
+  width: 100%;
+  margin: 0px;
+  /* layout */
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.searchForm {
+  display: block;
+  width: 729px;
+  margin: 0 auto;
+  /* border: 1px solid pink;*/
+}
+.searchBlock {
+  display: block;
+  text-align: right;
+  /* border: 1px solid purple; */
+}
+.searchInput {
+  display: inline;
+  margin-right: 5px;
+}
+.check {
+  width: 150px;
+  padding: 0.5rem;
+  margin: 0.2rem;
+}
+.check-all { /* pink for all */
+  background-color: #fcf;
+}
+.check-identity { /* red for identity */
+  background-color: #fcc;
+}
+.check-communication { /* green for communication / UC */
+  background-color: #cfc;
+}
+.check-others { /* yellow for others */
+  background-color: #ffc;
+}
+.check-service { /* purple for service */
+  background-color: #ccf;
+}
+.check-backup { /* blue for backup */
+  background-color: #cff;
+}
+.squareCheck {
+  float: right;
+  width: 160px;
+  text-align: left;
+  /*padding-right:150px;*/
+}
+/* https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
+footer {
+  text-align: center;
+  margin-top: 100px;
+  background-color: #FCFCFC;
+  width: 600px;
+  margin: 100px auto 0px auto;
+}
+
+.list-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+.list-enter-active, .list-leave-active {
+    transition: all 1s;
+}
+.list-enter, .list-leave-to /* .list-leave-active for <2.1.8 */ {
+    opacity: 0;
+    transform: translateY(30px);
+}
+.bounce-enter-active {
+  animation: bounce-in .5s;
+}
+.bounce-leave-active {
+  animation: bounce-out .5s;
+}
+@keyframes bounce-in {
+0% {
+    transform: scale(0);
+}
+50% {
+    transform: scale(1.5);
+}
+100% {
+    transform: scale(1);
+}
+}
+@keyframes bounce-out {
+0% {
+    transform: scale(1);
+}
+50% {
+    transform: scale(1.5);
+}
+100% {
+    transform: scale(0);
+}
+}
+
+label[data-v-0083af42] {
+  font-size: 1.25em;
+}
+div.check[data-v-0083af42]:hover, input[data-v-0083af42]:hover {
+  cursor: pointer;
+}
+.searchCategories[data-v-0083af42]{
+  width: 550px;
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-align: center;
+     align-items: center;
+ -ms-flex-pack: center;
+     justify-content: center;
+ /* You can set flex-wrap and flex-direction individually */
+ -ms-flex-direction: row;
+     flex-direction: row;
+ -ms-flex-wrap: wrap;
+     flex-wrap: wrap;
+ /* Or do it all in one line with flex flow */
+ -ms-flex-flow: row wrap;
+     flex-flow: row wrap;
+ /* tweak the where items line up on the row */
+ /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+ -ms-flex-line-pack: end;
+     align-content: flex-end;
+ margin: auto;
+}
+
+/*# sourceMappingURL=app.fc73e7b6d86aae21f567279de51f8d56.css.map*/

@@ -9,9 +9,11 @@ This project serves two aims:
 
 For now, the site is available online on https://ponsfrilus.github.io/EPFLArrival/.
 
+Stargazers
+
 ## How to add new tiles (the smart way)
 It should be pretty straight-forward if you are familiar with github:
-  1. [Fork](https://github.com/ponsfrilus/EPFLArrival#fork-destination-box) the repository,
+  1. [Fork](https://github.com/ponsfrilus/EPFLArrival/fork) the repository,
   1. Edit the [./data/tiles.json](https://github.com/ponsfrilus/EPFLArrival/blob/master/data/tiles.json) file,
   1. Create a [Pull Request](https://help.github.com/articles/about-pull-requests/).
 

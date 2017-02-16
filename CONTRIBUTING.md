@@ -27,6 +27,43 @@ Note: this is a `WIP` document !
 * Submit a pull request to the [EPFLArrival](https://github.com/ponsfrilus/EPFLArrival) repository.
 * If you think you are waiting too long, please [message](https://t.me/ponsfrilus) me.
 
+## Tiles information / recommandation
+A tile is a bunch of JSON data in the `./data/tiles.json` file.
+
+For example, the "GO" tile contains:
+```
+{
+  "title":"GO",
+  "desc_fr":"Service de raccourcissement d'URLs",
+  "desc_en":"URLs shortener service",
+  "link":"http://go.epfl.ch",
+  "tags":[
+    "service",
+    "url",
+    "website",
+    "go"
+  ],
+  "maincat":[
+    "service",
+    "communication"
+  ]
+}
+```
+
+  * `title` is a short title to name the tile;
+  * `desc_fr` a hook/brief/short sentence describing the tile (in french);
+  * `desc_en` a hook/brief/short sentence describing the tile (in english);
+  * `link` the link (in english) of the tile;
+  * `tags` the look-up table for the filter;
+  * `maincat` the color and radio filter. Choose between [ "others", "service", "communication", "identity", "backup"] where:  
+    - `service` is for services as help desk or reprography;
+    - `communication` is for all tools to communicate as email, "UC";
+    - `identity` is for IAM (identity and access management) or "me@EPFL";
+    - `backup` for any plate-form to store or share data, as "my" or "gDrive";
+    - `others` (and until more precise categories are defined), for everything else.
+
+  Note that more than one category is allowed but color will only match the first one (consider the first one as the most important one).
+
 # Contributors :neckbeard:
 Many thanks to all contributors:
 * @ponsfrilus

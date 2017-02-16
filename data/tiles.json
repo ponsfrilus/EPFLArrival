@@ -226,6 +226,18 @@
       "maincat":[
         "service"
       ]
+    },
+    {
+      "title":"Infowww",
+      "desc_en":"...",
+      "desc_fr":"Note de frais",
+      "link":"https://infowww.epfl.ch",
+      "tags":[
+        "infowww"
+      ],
+      "maincat":[
+        "service"
+      ]
     }
   ]
 }

@@ -23,8 +23,11 @@ export default {
     }
   },
   created () {
-    // Note ->> change for production (check branch + rawgit)
-    axios.get('https://raw.githubusercontent.com/ponsfrilus/EPFLArrival/master/data/tiles.json')
+    // Make the data set available locally with npm run local
+    let localData = process.env.NODE_ENV === 'local'
+      ? 'http://localhost:8080/tiles.json'
+      : 'https://raw.githubusercontent.com/ponsfrilus/EPFLArrival/master/data/tiles.json'
+    axios.get(localData)
     .then((response) => {
       // console.log(response.data)
       this.infos = response.data.infos

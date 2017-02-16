@@ -226,6 +226,22 @@
       "maincat":[
         "service"
       ]
+    },
+    {
+      "title":"Infowww",
+      "desc_en":"Expense report",
+      "desc_fr":"Note de frais",
+      "link":"https://infowww.epfl.ch",
+      "tags":[
+        "infowww",
+        "note de frais",
+        "expense report",
+        "remboursement",
+        "refund" 
+      ],
+      "maincat":[
+        "service"
+      ]
     }
   ]
 }

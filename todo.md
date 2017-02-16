@@ -6,4 +6,4 @@
 - [ ] Think about more suitable categories - or add faculties related filter ?
 - [ ] Take time to elaborate tile specific tests - and request one in PR for [CONTRIBUTING](https://github.com/ponsfrilus/EPFLArrival/blob/master/CONTRIBUTING).
 - [ ] UX need more [tabindex](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex)!
-- [ ]
+- [x] Mock-up the dev environment to serve a local JSON data file instead of github rawdata.

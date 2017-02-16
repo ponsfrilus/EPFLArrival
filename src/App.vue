@@ -24,7 +24,8 @@ export default {
   },
   created () {
     // Note ->> change for production (check branch + rawgit)
-    axios.get('https://raw.githubusercontent.com/ponsfrilus/EPFLArrival/master/data/tiles.json')
+    // axios.get('https://raw.githubusercontent.com/ponsfrilus/EPFLArrival/master/data/tiles.json')
+    axios.get('http://localhost:8080/tiles.json')
     .then((response) => {
       // console.log(response.data)
       this.infos = response.data.infos

@@ -1,10 +1,32 @@
-# arrival
+# EPFL Arrival
 
-A Vue.js project
+A Vue.js project for EPFL's newcomers.
 
-Available here: https://ponsfrilus.github.io/EPFLArrival/
+This project serves two aims:
+  1. Provide a user friendly website for newcomers to easily find services and
+     resources they might need;
+  2. Act as a discovery tools for EPFL employees.
 
-## Build Setup
+For now, the site is available online on https://ponsfrilus.github.io/EPFLArrival/.
+
+## How to add new tiles (the smart way)
+It should be pretty straight-forward if you are familiar with github:
+  1. [Fork](https://github.com/ponsfrilus/EPFLArrival#fork-destination-box) the repository,
+  1. Edit the [./data/tiles.json](https://github.com/ponsfrilus/EPFLArrival/blob/master/data/tiles.json) file,
+  1. Create a [Pull Request](https://help.github.com/articles/about-pull-requests/).
+
+You may want to have a look to the [CONTRIBUTING](https://github.com/ponsfrilus/EPFLArrival/blob/master/CONTRIBUTING) guide.
+
+## How to add new tiles (the new way)
+Leave me a message on [Telegram](https://telegram.org/) → [@ponsfrilus](https://t.me/ponsfrilus).
+
+## How to add new tiles (the old way)
+You can send me a mail once you have tried rly rly hard the others ways.
+
+
+## Developers
+
+### Build Setup
 
 ``` bash
 # install dependencies

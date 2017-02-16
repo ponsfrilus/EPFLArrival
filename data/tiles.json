@@ -237,7 +237,26 @@
         "note de frais",
         "expense report",
         "remboursement",
-        "refund" 
+        "refund"
+      ],
+      "maincat":[
+        "service"
+      ]
+    },
+    {
+      "title":"Pocket Campus",
+      "desc_en":"Smartphone app EPFL",
+      "desc_fr":"Application pour smartphone EPFL",
+      "link":"http://pocketcampus.org/epfl-en/",
+      "tags":[
+        "pocketcampus",
+        "iphone",
+        "android",
+        "app",
+        "mobile",
+        "smartphone",
+        "GSM",
+        "natel"
       ],
       "maincat":[
         "service"

@@ -5,3 +5,10 @@ before_install:
 - npm install
 script:
 - npm run build
+- git checkout gh-pages
+- ls -al
+- rm -rf index.html static && cp -r dist/* .
+- git status
+- git add .
+- git commit -m"New build"
+- git push

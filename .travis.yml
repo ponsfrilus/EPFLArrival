@@ -9,7 +9,7 @@ before_install:
 - npm install
 script:
 - npm run build
-- git fetch
+- git fetch origin
 - git checkout gh-pages
 - ls -al
 - rm -rf index.html static && cp -r dist/* .

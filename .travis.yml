@@ -9,7 +9,7 @@ before_script:
 - git fetch origin gh-pages
 - git status
 - git branch -r
-- git checkout -b gh-pages origin/gh-pages
+- git checkout gh-pages origin/gh-pages
 - git branch -a
 script:
 - npm run build

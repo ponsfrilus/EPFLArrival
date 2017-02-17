@@ -261,6 +261,21 @@
       "maincat":[
         "service"
       ]
+    },
+    {
+      "title":"UC",
+      "desc_fr":"Communications unifié",
+      "desc_en":"Unified Communications",
+      "link":"http://uc.epfl.ch/",
+      "tags":[
+        "epfl",
+        "website",
+        "UC",
+        "Unified Communications"
+      ],
+      "maincat":[
+        "service"
+      ]
     }
   ]
 }

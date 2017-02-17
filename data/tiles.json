@@ -261,6 +261,25 @@
       "maincat":[
         "service"
       ]
+    },
+    {
+      "title":"STI",
+      "desc_en":"STI website",
+      "desc_fr":"Site de la STI",
+      "link":"http://sti.epfl.ch",
+      "tags":[
+        "sti",
+        "science",
+        "technique",
+        "ingénieur",
+        "technical",
+        "engineering",
+        "engineer",
+        "best faculty"
+      ],
+      "maincat":[
+        "others"
+      ]
     }
   ]
 }

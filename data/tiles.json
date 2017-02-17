@@ -87,9 +87,9 @@
       ]
     },
     {
-      "title":"EWA",
-      "desc_en":"EPFL Web Mail",
-      "desc_fr":"EPFL Web Mail",
+      "title":"EPFL Web Mail",
+      "desc_en":"EWA",
+      "desc_fr":"EWA",
       "link":"http://ewa.epfl.ch/",
       "tags":[
         "mail",
@@ -146,7 +146,7 @@
     },
     {
       "title":"Poseidon",
-      "desc_en":"Troubleshooting and counseling service for private laptop",
+      "desc_en":"Troubleshooting and counseling service for private laptop.",
       "desc_fr":"Achat et support de laptops privés",
       "link":"http://poseidon.epfl.ch",
       "tags":[
@@ -272,6 +272,26 @@
         "students",
         "development",
         "website"
+      ],
+      "maincat":[
+        "others"
+      ]
+    },
+    {
+      "title":"STI",
+      "desc_en":"School of Engineering",
+      "desc_fr":"Faculté Sciences et Technique de l'Ingénieur",
+      "link":"http://sti.epfl.ch",
+      "tags":[
+        "sti",
+        "science",
+        "technique",
+        "ingénieur",
+        "technical",
+        "engineering",
+        "engineer",
+	"faculté",
+	"faculty"
       ],
       "maincat":[
         "others"

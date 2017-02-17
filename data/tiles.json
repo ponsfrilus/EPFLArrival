@@ -87,9 +87,9 @@
       ]
     },
     {
-      "title":"EPFL Web Mail",
-      "desc_en":"EWA",
-      "desc_fr":"EWA",
+      "title":"EWA",
+      "desc_en":"EPFL Web Mail",
+      "desc_fr":"EPFL Web Mail",
       "link":"http://ewa.epfl.ch/",
       "tags":[
         "mail",
@@ -146,7 +146,7 @@
     },
     {
       "title":"Poseidon",
-      "desc_en":"Troubleshooting and counseling service for private laptop.",
+      "desc_en":"Troubleshooting and counseling service for private laptop",
       "desc_fr":"Achat et support de laptops privés",
       "link":"http://poseidon.epfl.ch",
       "tags":[

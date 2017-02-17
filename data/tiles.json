@@ -1,20 +1,6 @@
 {
   "infos":[
     {
-      "title":"SDF",
-      "desc_fr":"Site officiel de la SDF",
-      "desc_en":"Official SDF website",
-      "link":"http://studdevf.epfl.ch",
-      "tags":[
-        "sdf",
-        "students",        
-        "website"
-      ],
-      "maincat":[
-        "others"
-      ]
-    },
-    {
       "title":"EPFL",
       "desc_fr":"Site officiel de l'EPFL",
       "desc_en":"Official EPFL website",
@@ -274,6 +260,21 @@
       ],
       "maincat":[
         "service"
+      ]
+    },
+    {
+      "title":"SDF",
+      "desc_fr":"Students Development Factory",
+      "desc_en":"Students Development Factory",
+      "link":"http://studevf.epfl.ch",
+      "tags":[
+        "sdf",
+        "students",
+        "development",
+        "website"
+      ],
+      "maincat":[
+        "others"
       ]
     }
   ]

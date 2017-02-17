@@ -7,12 +7,25 @@ describe('CardsHolder.vue', () => {
       el: document.createElement('div'),
       render: (createElement) => createElement(CardsHolder, {
         props:
-          {infos: []}
+          {infos: [
+            {
+      "title":"SDF",
+      "desc_fr":"Site officiel de la SDF",
+      "desc_en":"Official SDF website",
+      "link":"http://studdevf.epfl.ch",
+      "tags":[
+        "sdf",
+        "students",
+        "website"
+      ],
+      "maincat":[
+        "communication"
+      ]
+    },
+          ]}
       })
     })
-    /* XXX TODO
-    expect(vm.$el.querySelector('.hello h1').textContent)
-      .to.equal('Welcome to Your Vue.js App')
-      */
+    expect(vm.$el.querySelector('div.searchCategories div.check-communication').textContent)
+      .to.equal('Communication')
   })
 })

@@ -261,6 +261,20 @@
       "maincat":[
         "service"
       ]
+    },
+    {
+      "title":"1234",
+      "desc_fr":"Service Desk VPSI",
+      "desc_en":"Official Helpdesk VPSI",
+      "link":"http://www.1234.epfl.ch",
+      "tags":[
+        "VPSI",
+        "helpdesk"
+        "Service desk"
+      ],
+      "maincat":[
+        "service"
+      ]
     }
   ]
 }

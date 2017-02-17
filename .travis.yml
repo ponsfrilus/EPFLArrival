@@ -7,13 +7,13 @@ branches:
     - gh-pages
 before_install:
 - npm install
+- git fetch origin gh-pages
+- git status
 script:
 - npm run build
-- git fetch origin gh-pages
 - git checkout gh-pages
 - ls -al
 - rm -rf index.html static && cp -r dist/* .
 - git status
 - git add .
-- git commit -m"New build"
-- git push
+- git status

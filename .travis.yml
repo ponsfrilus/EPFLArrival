@@ -11,6 +11,6 @@ before_install:
 script:
 - npm run build
 - git checkout -b travis-build
-- cp dist/* .
+- cp -r dist/* .
 - git add static index.html
 - git status

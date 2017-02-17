@@ -4,13 +4,17 @@ node_js:
 branches:
   only:
     - master
-before_install:
+before_script:
 - npm install
 - git fetch origin gh-pages
 - git status
+- git branch -r
+- git checkout -b gh-pages origin/gh-pages
+- git branch -a
 script:
 - npm run build
 - git checkout -b travis-build
 - cp -r dist/* .
 - git add static index.html
 - git status
+-

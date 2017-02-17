@@ -10,7 +10,7 @@ before_install:
 - git status
 script:
 - npm run build
-- git checkout gh-pages
+- git checkout gh-pages || git checkout --orphan gh-pages
 - ls -al
 - rm -rf index.html static && cp -r dist/* .
 - git status

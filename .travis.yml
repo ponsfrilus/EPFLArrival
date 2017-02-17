@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- "7.4"
+branches:
+  only:
+    - master
+    - gh-pages
+before_install:
+- npm install
+- git fetch origin gh-pages
+- git status
+script:
+- npm run build
+- git checkout gh-pages
+- ls -al
+- rm -rf index.html static && cp -r dist/* .
+- git status
+- git add .
+- git status

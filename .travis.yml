@@ -6,21 +6,5 @@ branches:
     - master
 before_script:
 - npm install
-- git branch -a
-- git remote show
-- git remote add gh-pages git@github.com:ponsfrilus/EPFLArrival.git
-- git branch -a
-- git remote show
-- git branch gh-pages origin/gh-pages
-- git branch -a
-- git remote show
 script:
-- npm run build
-- git checkout gh-pages
-- cp -r dist/* .
-- rm -rf dist
-- git add .
-- git status
-- git commit -m "Travis Test"
-- git status
-- git log --graph --oneline --all --decorate
+- npm run test

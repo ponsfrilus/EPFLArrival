@@ -269,47 +269,11 @@
       "link":"http://1234.epfl.ch",
       "tags":[
         "VPSI",
-        "helpdesk",
-        "1234",
+        "helpdesk"
         "Service desk"
       ],
       "maincat":[
         "service"
-     ]
-    },
-    {
-      "title":"SDF",
-      "desc_fr":"Students Development Factory",
-      "desc_en":"Students Development Factory",
-      "link":"http://studevf.epfl.ch",
-      "tags":[
-        "sdf",
-        "students",
-        "development",
-        "website"
-      ],
-      "maincat":[
-        "others"
-      ]
-    },
-    {
-      "title":"STI",
-      "desc_en":"School of Engineering",
-      "desc_fr":"Faculté Sciences et Technique de l'Ingénieur",
-      "link":"http://sti.epfl.ch",
-      "tags":[
-        "sti",
-        "science",
-        "technique",
-        "ingénieur",
-        "technical",
-        "engineering",
-        "engineer",
-        "faculté",
-        "faculty"
-      ],
-      "maincat":[
-        "others"
       ]
     }
   ]

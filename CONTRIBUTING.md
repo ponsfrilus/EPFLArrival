@@ -67,15 +67,10 @@ For example, the "GO" tile contains:
   Note that more than one category is allowed but color will only match the first one (consider the first one as the most important one).
 
 # Contributors :neckbeard:
-Many thanks to all contributors:
-* @ponsfrilus
-* @stefanonepa
-* @domq
-
-See https://github.com/ponsfrilus/EPFLArrival/graphs/contributors for details.
+Many thanks to all contributors! See [CONTRIBUTORS](./CONTRIBUTORS.md) file for a list and have a look to https://github.com/ponsfrilus/EPFLArrival/graphs/contributors for details.
 
 Special thanks to [@stefanonepa](https://github.com/stefanonepa) and all the
 [@epfl-dojo](https://github.com/epfl-dojo) team!
 
-Note: the bullet list of contributors can be generated with:  
+Note: the bullet list of [contributors](./CONTRIBUTORS.md) is generated with:  
 `curl -s https://api.github.com/repos/ponsfrilus/EPFLArrival/contributors | jq  -r '.[] | .login' | sed 's/^/\ \ * @/'`

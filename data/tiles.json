@@ -311,6 +311,28 @@
       "maincat":[
         "others"
       ]
+    },
+    {
+      "title":"UC",
+      "desc_fr":"Communications Unifiées",
+      "desc_en":"Unified Communications",
+      "link":"http://uc.epfl.ch/",
+      "tags":[
+        "epfl",
+        "Communication",
+        "Phone",
+        "VoiceMail",
+        "IP phone",
+        "Telephone",
+        "jabber",
+        "Video Conferences",
+        "Call",
+        "UC",
+        "Unified Communications"
+      ],
+      "maincat":[
+        "communication"
+      ]
     }
   ]
 }

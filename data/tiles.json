@@ -64,6 +64,7 @@
       "desc_fr":"Centre d'impression",
       "link":"http://repro.epfl.ch",
       "tags":[
+        "repro",
         "service",
         "print",
         "impression"
@@ -87,9 +88,9 @@
       ]
     },
     {
-      "title":"EPFL Web Mail",
-      "desc_en":"EWA",
-      "desc_fr":"EWA",
+      "title":"EWA",
+      "desc_en":"EPFL Web Mail",
+      "desc_fr":"EPFL Web Mail",
       "link":"http://ewa.epfl.ch",
       "tags":[
         "mail",
@@ -107,6 +108,7 @@
       "desc_fr":"Stockage des fichiers",
       "link":"http://nas.epfl.ch",
       "tags":[
+        "nas",
         "storage",
         "backup",
         "camipro"
@@ -121,6 +123,7 @@
       "desc_fr":"Filtrage antispam pour entreprises",
       "link":"http://mailcleaner.epfl.ch",
       "tags":[
+        "mailcleaner",
         "spam",
         "antispam",
         "mail"
@@ -193,7 +196,8 @@
       "link":"https://network.epfl.ch/epnet/dyndns.pl",
       "tags":[
         "epnet",
-        "dyndns"
+        "dyndns",
+        "dns"
       ],
       "maincat":[
         "service"
@@ -207,6 +211,7 @@
       "tags":[
         "epnet",
         "auth",
+        "rauth",
         "certificat",
         "pki",
         "switch"
@@ -250,6 +255,7 @@
       "link":"http://pocketcampus.org/epfl-en/",
       "tags":[
         "pocketcampus",
+        "pocket campus",
         "iphone",
         "android",
         "app",
@@ -318,7 +324,6 @@
       "desc_en":"Unified Communications",
       "link":"http://uc.epfl.ch",
       "tags":[
-        "epfl",
         "Communication",
         "Phone",
         "VoiceMail",
@@ -327,7 +332,7 @@
         "jabber",
         "Video Conferences",
         "Call",
-        "UC",
+        "uc",
         "Unified Communications"
       ],
       "maincat":[

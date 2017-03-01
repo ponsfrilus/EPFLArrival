@@ -62,7 +62,7 @@
       "title":"Repro",
       "desc_en":"Print center",
       "desc_fr":"Centre d'impression",
-      "link":"http://repro.epfl.ch/",
+      "link":"http://repro.epfl.ch",
       "tags":[
         "service",
         "print",
@@ -76,7 +76,7 @@
       "title":"Camipro",
       "desc_en":"Your multifunction campus card",
       "desc_fr":"Votre carte multifonction sur le campus",
-      "link":"http://camipro.epfl.ch/",
+      "link":"http://camipro.epfl.ch",
       "tags":[
         "identity",
         "card",
@@ -90,7 +90,7 @@
       "title":"EPFL Web Mail",
       "desc_en":"EWA",
       "desc_fr":"EWA",
-      "link":"http://ewa.epfl.ch/",
+      "link":"http://ewa.epfl.ch",
       "tags":[
         "mail",
         "ewa",
@@ -105,7 +105,7 @@
       "title":"NAS",
       "desc_en":"File storage services",
       "desc_fr":"Stockage des fichiers",
-      "link":"http://nas.epfl.ch/index.php",
+      "link":"http://nas.epfl.ch",
       "tags":[
         "storage",
         "backup",
@@ -203,7 +203,7 @@
       "title":"rAuth",
       "desc_en":"Registration Authority SwitchPKI@EPFL",
       "desc_fr":"Autorité de Certification de l'EPFL",
-      "link":"http://rauth.epfl.ch/",
+      "link":"http://rauth.epfl.ch",
       "tags":[
         "epnet",
         "auth",
@@ -316,7 +316,7 @@
       "title":"UC",
       "desc_fr":"Communications Unifiées",
       "desc_en":"Unified Communications",
-      "link":"http://uc.epfl.ch/",
+      "link":"http://uc.epfl.ch",
       "tags":[
         "epfl",
         "Communication",

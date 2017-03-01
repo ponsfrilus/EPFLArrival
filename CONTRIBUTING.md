@@ -53,9 +53,9 @@ For example, the "GO" tile contains:
 ```
 
   * `title` is a short title to name the tile;
-  * `desc_fr` a hook/brief/short sentence describing the tile (in french);
-  * `desc_en` a hook/brief/short sentence describing the tile (in english);
-  * `link` the link (in english) of the tile;
+  * `desc_fr` a hook/brief/short sentence describing the tile (in French);
+  * `desc_en` a hook/brief/short sentence describing the tile (in English);
+  * `link` the link URL (in English) of the tile (No trailing "/" !);
   * `tags` the look-up table for the filter;
   * `maincat` the color and radio filter. Choose between [ "others", "service", "communication", "identity", "backup"] where:  
     - `service` is for services as help desk or reprography;

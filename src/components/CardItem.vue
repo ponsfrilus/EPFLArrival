@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <a :class="computedClass" class="tile">
-      <h2 class="tile-title">{{ info.title }}</h2>
+  <div :id="info.title">
+    <a :class="computedClass" class="tile" :id="'tile-' + info.title">
+      <h2 class="tile-title" :id="'tile-title-' + info.title">{{ info.title }}</h2>
       <div class="tile-divider"></div>
       <p class="tile-description">{{ info.desc_en }}
-        <br /><a :href="info.link" :title="info.link">{{ computedLink }}</a>
+        <br /><a :href="info.link" :title="info.link" :id="'tile-link-' + info.title">{{ computedLink }}</a>
       </p>
     </a>
   </div>

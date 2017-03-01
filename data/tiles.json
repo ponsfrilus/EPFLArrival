@@ -149,7 +149,7 @@
     },
     {
       "title":"Poseidon",
-      "desc_en":"Troubleshooting and counseling service for private laptop.",
+      "desc_en":"Troubleshooting and counseling service for private laptop",
       "desc_fr":"Achat et support de laptops privés",
       "link":"http://poseidon.epfl.ch",
       "tags":[
@@ -164,7 +164,7 @@
     },
     {
       "title":"VPN",
-      "desc_en":"Virtual private network",
+      "desc_en":"Virtual Private Network",
       "desc_fr":"Réseau privé virtuel",
       "link":"https://vpn.epfl.ch",
       "tags":[

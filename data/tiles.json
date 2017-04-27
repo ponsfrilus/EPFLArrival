@@ -354,18 +354,18 @@
       ]
     },
     {
-      "title":"Emplois",
+      "title":"Jobs",
       "desc_fr":"Les emplois à l'EPFL",
       "desc_en":"The jobs at EPFL",
       "link":"http://emploi.epfl.ch/en",
       "tags":[
         "Emplois",
-        "Jobs",
+        "jobs",
         "Work",
         "Travailler",
         "Travail",
         "Employer",
-        "Job",
+        "job",
         "Position",
         "Positions"
       ],

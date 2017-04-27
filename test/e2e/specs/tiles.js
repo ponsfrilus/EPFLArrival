@@ -481,6 +481,27 @@ describe('Testing EPFLArrival\'s tiles', function() {
         .expect.element('#tile-link-'+tTid).to.have.attribute('title').which.contains('http://uc.epfl.ch');
     });
 
+    it('uses BDD to run test on tile: Jobs', function(client) {
+      client
+        .url(client.globals.devServerURL)
+        .expect.element('body').to.be.present.before(1000);
+
+      // Tile's Title
+      let tT = 'Jobs';
+      let tTid = tT.replace(/\s+/g, '-').toLowerCase();
+
+      // Search for the tile's tile in lowercase
+      client.setValue('input[type=text]', [tT.toLowerCase(), client.Keys.ENTER])
+        .pause(2000);
+
+      // Test contents of the tile
+      client
+        .assert.containsText('h2', tT)
+        .assert.containsText('a[id="tile-link-'+tTid+'"]', 'emploi.epfl.ch')
+        .assert.containsText('p[class="tile-description"]', 'The jobs at EPFL')
+        .expect.element('#tile-link-'+tTid).to.have.attribute('title').which.contains('http://emploi.epfl.ch');
+    });
+
     /** YOUR TILE'S TEST
     it('uses BDD to run test on tile: XXXX', function(client) {
       client

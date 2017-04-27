@@ -499,7 +499,7 @@ describe('Testing EPFLArrival\'s tiles', function() {
         .assert.containsText('h2', tT)
         .assert.containsText('a[id="tile-link-'+tTid+'"]', 'gitlab.epfl.ch')
         .assert.containsText('p[class="tile-description"]', 'GIT Repo Hosting')
-        .expect.element('#tile-link-'+tTid).to.have.attribute('title').which.contains('https://gitlabs.epfl.ch');
+        .expect.element('#tile-link-'+tTid).to.have.attribute('title').which.contains('https://gitlab.epfl.ch');
     });
 
     it('uses BDD to run test on tile: Jobs', function(client) {

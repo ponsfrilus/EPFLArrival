@@ -354,6 +354,28 @@
       ]
     },
     {
+      "title":"Gitlab",
+      "desc_fr":"Hébergement de dépôts GIT",
+      "desc_en":"GIT Repo Hosting",
+      "link":"https://gitlab.epfl.ch",
+      "tags":[
+        "gitlab",
+        "git",
+        "versioning",
+        "code",
+        "hosting",
+        "subversion",
+        "svn",
+        "mercurial",
+        "bazaar",
+        "cvs"
+      ],
+      "maincat":[
+        "backup",
+        "service"
+      ]
+    },
+    {
       "title":"Jobs",
       "desc_fr":"Les emplois à l'EPFL",
       "desc_en":"The jobs at EPFL",

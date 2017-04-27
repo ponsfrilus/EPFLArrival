@@ -1,6 +1,11 @@
 // 1. start the dev server using production config
-process.env.NODE_ENV = 'testing'
-var server = require('../../build/dev-server.js')
+
+//These are testint the tiles online...
+// process.env.NODE_ENV = 'testing'
+// var server = require('../../build/dev-server.js')
+//So let's use local tiles.json to be sure it works !
+process.env.NODE_ENV = 'local'
+var server = require('../../build/dev-local-server.js')
 
 // 2. run the nightwatch test suite against it
 // to run in additional browsers:

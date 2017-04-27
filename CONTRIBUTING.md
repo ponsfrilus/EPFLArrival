@@ -22,10 +22,12 @@ Note: this is a `WIP` document !
 * Make commits of logical units.
 * Make sure your commit messages are eloquent.
 * Make sure you have added the necessary tests for your changes.
-* Run _all_ the tests to assure nothing else was accidentally broken.
+* Run _all_ the tests to assure nothing else was accidentally broken. (`npm run local` & `npm run test`)
 * Push your changes to a topic branch in your fork of the repository.
 * Submit a pull request to the [EPFLArrival](https://github.com/ponsfrilus/EPFLArrival) repository.
 * If you think you are waiting too long, please [message](https://t.me/ponsfrilus) me.
+
+Note: if your fork is behind the upstream repository, check [How to sync a forked repository](https://help.github.com/articles/syncing-a-fork/).
 
 ## Tiles information / recommendation
 A tile is a bunch of JSON data in the `./data/tiles.json` file.

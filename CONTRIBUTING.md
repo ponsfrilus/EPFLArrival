@@ -17,7 +17,7 @@ Note: this is a `WIP` document !
 * Clone the fork on your computer.
 * Create a topic branch from the `master` one.
   * To quickly create a topic branch based on master:  
-   `git checkout -b fix/my_contribution master`  
+   `git checkout -b tile/my_contribution master`  
    Please avoid working directly on the `master` branch.
 * Make commits of logical units.
 * Make sure your commit messages are eloquent.

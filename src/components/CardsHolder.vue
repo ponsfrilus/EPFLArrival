@@ -60,7 +60,7 @@ export default {
       }
       return checkFiltered.filter((info) => {
         return info.tags.find((tag) => {
-          if (tag.includes(this.searchString)) {
+          if (tag.toLowerCase().includes(this.searchString.toLowerCase())) {
             return true
           }
         })
